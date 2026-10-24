@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Transfer Money Case Study</title>
+<meta name="description" content="Redesigning Leumi’s money transfer flow with a new design system.">
+<link rel="canonical" href="https://nettazoe.com/transfer.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Netta Zoe">
+<meta property="og:title" content="Transfer Money Case Study">
+<meta property="og:description" content="Redesigning Leumi’s money transfer flow with a new design system.">
+<meta property="og:url" content="https://nettazoe.com/transfer.html">
+<meta property="og:image" content="https://nettazoe.com/assets/transfer-loop.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#fafaf9">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>(() => {
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  const top = () => { if (location.hash) return; const h = document.documentElement, prev = h.style.scrollBehavior; h.style.scrollBehavior = 'auto'; window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); h.style.scrollBehavior = prev; };
+  top(); document.addEventListener('DOMContentLoaded', top); addEventListener('load', top); addEventListener('pageshow', top);
+})();</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flower" viewBox="0 0 20 20"><path d="M6.01581 19.3153C5.36836 19.3153 4.76588 19.1445 4.20837 18.8028C3.66883 18.479 3.22821 18.0384 2.88651 17.4809C2.56279 16.9234 2.40093 16.3119 2.40093 15.6465C2.40093 14.6753 2.76062 13.848 3.48 13.1646C4.21736 12.4812 5.13457 12.0856 6.23162 11.9777L5.96185 11.1144C5.60216 11.3122 5.18852 11.4831 4.72092 11.627C4.27131 11.7708 3.83968 11.8428 3.42604 11.8428C2.7786 11.8428 2.19411 11.6809 1.67256 11.3572C1.16899 11.0155 0.76434 10.5749 0.458604 10.0353C0.152868 9.47782 0 8.88433 0 8.25487C0 7.57146 0.16186 6.95999 0.485581 6.42046C0.827286 5.86294 1.26791 5.42232 1.80744 5.0986C2.34697 4.77488 2.94046 4.61302 3.5879 4.61302C4.32527 4.61302 5.03565 4.87379 5.71906 5.39534C6.40247 5.91689 6.89705 6.54635 7.20278 7.28371L7.90418 6.74418C7.41859 6.29457 7.02294 5.79999 6.7172 5.26046C6.42945 4.70294 6.28557 4.1724 6.28557 3.66883C6.28557 2.98542 6.44743 2.37395 6.77115 1.83442C7.09487 1.2769 7.5265 0.836278 8.06604 0.512557C8.62355 0.170852 9.23503 0 9.90045 0C10.5659 0 11.1773 0.170852 11.7349 0.512557C12.2924 0.836278 12.733 1.2769 13.0567 1.83442C13.3984 2.39194 13.5693 3.00341 13.5693 3.66883C13.5693 4.1724 13.4164 4.71193 13.1107 5.28744C12.8049 5.84495 12.4183 6.33053 11.9507 6.74418L12.6521 7.28371C12.9578 6.52836 13.4434 5.89891 14.1088 5.39534C14.7922 4.87379 15.5116 4.61302 16.267 4.61302C16.9144 4.61302 17.5079 4.77488 18.0474 5.0986C18.6049 5.42232 19.0456 5.86294 19.3693 6.42046C19.693 6.95999 19.8549 7.57146 19.8549 8.25487C19.8549 8.88433 19.693 9.47782 19.3693 10.0353C19.0635 10.5749 18.6499 11.0155 18.1283 11.3572C17.6248 11.6809 17.0673 11.8428 16.4558 11.8428C15.6465 11.8428 14.7922 11.6 13.893 11.1144L13.6232 11.9777C14.3426 12.0496 14.9901 12.2564 15.5656 12.5981C16.1411 12.9218 16.5997 13.3535 16.9414 13.893C17.2831 14.4146 17.4539 14.999 17.4539 15.6465C17.4539 16.2939 17.2831 16.8964 16.9414 17.4539C16.6177 18.0114 16.186 18.4611 15.6465 18.8028C15.107 19.1445 14.5045 19.3153 13.8391 19.3153C12.8139 19.3153 11.9597 18.9646 11.2763 18.2632C10.5929 17.5439 10.2511 16.6266 10.2511 15.5116C10.2511 15.098 10.2961 14.7113 10.386 14.3516H9.46882C9.50479 14.5315 9.53177 14.7203 9.54975 14.9181C9.58572 15.1159 9.60371 15.3138 9.60371 15.5116C9.60371 16.6087 9.262 17.5169 8.57859 18.2363C7.89518 18.9556 7.04092 19.3153 6.01581 19.3153ZM9.90045 13.6502C10.5119 13.6502 11.0694 13.4973 11.573 13.1916C12.0766 12.8859 12.4812 12.4812 12.787 11.9777C13.0927 11.4741 13.2456 10.9166 13.2456 10.3051C13.2456 9.69363 13.0927 9.13611 12.787 8.63255C12.4812 8.12898 12.0766 7.72433 11.573 7.41859C11.0694 7.11286 10.5119 6.95999 9.90045 6.95999C9.28898 6.95999 8.73146 7.11286 8.2279 7.41859C7.74232 7.72433 7.34666 8.12898 7.04092 8.63255C6.75317 9.13611 6.60929 9.69363 6.60929 10.3051C6.60929 10.9166 6.75317 11.4831 7.04092 12.0046C7.34666 12.5082 7.75131 12.9129 8.25487 13.2186C8.75844 13.5063 9.30696 13.6502 9.90045 13.6502Z"/></symbol>
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5"/></symbol>
+</svg>
+<header class="nav">
+  <div class="wrap wide">
+    <a class="brand" href="index.html"><svg><use href="#flower"/></svg>Netta Zoe</a>
+    <nav class="nav-links"><a href="index.html#work">Work</a><a href="about.html">About</a><a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
+  </div>
+</header>
+
+<main class="wrap cs-layout">
+  <article class="cs">
+
+    <header class="cs-head">
+      <a class="back" href="index.html#work">← All work</a>
+      <p class="label">Leumi Bank • Design system • 2025</p>
+      <h1 class="serif">Transfer Money</h1>
+      <p class="lede">Redesigning the money transfer flow, with a new design system, for Leumi’s private banking website.</p>
+    </header>
+
+    <div class="cs-hero">
+      <div class="media vid contain"><video src="assets/transfer-loop.mp4" poster="assets/transfer-loop.jpg" autoplay muted loop playsinline aria-label="Transfer Money: the new transfer flow beside design system components"></video></div>
+      <dl class="facts">
+        <div><dt>Client</dt><dd>Leumi Bank</dd></div>
+        <div><dt>Sector</dt><dd>Banking, Finance</dd></div>
+        <div><dt>Duration</dt><dd>5 months, 2025</dd></div>
+        <div><dt>Team</dt><dd><span class="nowrap">Tal Gruber, Lead designer</span><br>Netta Zoe</dd></div>
+      </dl>
+    </div>
+
+    <section class="sec" id="challenge">
+      <p class="label">The challenge</p>
+      <h2>An outdated site, a flow people dropped out of, and no full redesign on the table.</h2>
+      <p>Leumi’s private banking website was outdated, and customers were dropping off mid-flow, missing steps, or completing transfers incorrectly. The previous design agency had built a solution inside a popup that never launched, because the experience was too cramped and confusing. At the same time, the client wasn’t ready to redesign the full website. We needed to improve the experience within that constraint.</p>
+      <p>Through research, we found a way forward: internal flows could run in a URL-based full-screen takeover, giving us a dedicated environment to design properly without touching the existing site structure.</p>
+    </section>
+
+    <section class="sec" id="before">
+      <p class="label">Context</p>
+      <h2>The previous experience.</h2>
+      <p>Every decision sat on one long form inside the existing site: account, recipient, amount, installments and dates, all at once.</p>
+      <div class="bgrid two">
+        <img class="bi " src="assets/transfer-old-1.jpg" alt="The old transfer form: recipient, amount and installments on one screen" loading="lazy">
+        <img class="bi " src="assets/transfer-old-2.jpg" alt="The old transfer flow: approval step with verification code" loading="lazy">
+      </div>
+    </section>
+
+    <section class="sec" id="problem">
+      <p class="label">Problem statement</p>
+      <h2>How might we redesign a complex banking flow within a site we couldn’t touch, and build the foundation for every flow that follows?</h2>
+    </section>
+
+    <section class="sec" id="design-system">
+      <p class="label">The design system</p>
+      <h2>Foundation first.</h2>
+      <p>Before touching the flow, we built the foundation: a unified component and pattern library to serve all future flows on the site. The transfer flow was first. Everything else follows.</p>
+      <img class="bi " src="assets/transfer-ds-colors.jpg" alt="Design system colors: Leumi logo, illustrations, violet, negative, positive, blue and charcoal teal scales" loading="lazy">
+      <div class="bgrid two eqh">
+        <img class="bi " src="assets/transfer-ds-pages.jpg" alt="Design system file structure: getting started, typography, color guidance, icons and illustration, components" loading="lazy">
+        <img class="bi " src="assets/transfer-ds-variables.jpg" alt="Spacing variables in the design system" loading="lazy">
+      </div>
+      <img class="bi " src="assets/transfer-ds-icons.jpg" alt="Icon guidelines, the 24px icon set and the illustration library" loading="lazy">
+      <video class="bv" src="assets/transfer-illustrations.mp4" poster="assets/transfer-illustrations.jpg" autoplay muted loop playsinline aria-label="The illustration library: 190 illustrations in Leumi’s style"></video>
+      <img class="bi " src="assets/transfer-ds-components.jpg" alt="Component boards: text fields, dropdowns, date pickers and selection controls" loading="lazy">
+    </section>
+
+    <section class="sec" id="solution">
+      <p class="label">The solution</p>
+      <h2>One clear step at a time.</h2>
+      <p>The money transfer flow was redesigned as a focused multi-step process: who you’re transferring to, how much and when, why, authentication, and confirmation. Each screen does one thing. The persistent summary panel on the left keeps users oriented without interrupting their progress.</p>
+      <p>The flow handles significant branching: standing orders, future transfers, installment payments, foreign resident transfers and more. Each path has its own solution, all built within the same design system, so the experience stays coherent whichever route the user takes.</p>
+      <div class="media stage film"><div class="stage-ctrl"><button type="button" class="sc-play" aria-label="Pause"><svg viewBox="0 0 24 24" aria-hidden="true"><g class="i-pause"><rect x="6" y="4.5" width="4" height="15" rx="1.2"/><rect x="14" y="4.5" width="4" height="15" rx="1.2"/></g><path class="i-play" d="M7.5 4.8v14.4c0 .8.9 1.3 1.6.9l11.3-7.2a1.05 1.05 0 0 0 0-1.8L9.1 3.9c-.7-.4-1.6.1-1.6.9z"/></svg></button><button type="button" class="sc-restart" aria-label="Restart"><svg viewBox="0 0 24 24" aria-hidden="true" class="stroke"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></button></div><video src="assets/transfer-flow.mp4" poster="assets/transfer-flow.jpg" autoplay muted loop playsinline aria-label="The new transfer flow: transferring money with a payment plan"></video></div>
+      <p class="caption">Transferring money with a payment plan.</p>
+    </section>
+
+    <section class="sec" id="principles">
+      <p class="label">Key design principles</p>
+      <div class="cards two-col">
+        <div><b>One step per screen</b><span>Each step asks one question. The previous flow cramped several decisions onto one screen, so users missed things and made mistakes.</span></div>
+        <div><b>Always oriented</b><span>The persistent summary panel shows what’s been confirmed so far. At any point the user knows where they are and what comes next.</span></div>
+        <div><b>Show only what’s relevant</b><span>Branching options like installments or future dates appear only when the user’s choice triggers them: never upfront, never overwhelming.</span></div>
+        <div><b>Built to scale</b><span>Every component, token and pattern is part of the design system. Deposits, loans and every future flow are built on the same foundation.</span></div>
+      </div>
+      <div class="bgrid desk-mob">
+        <img class="bi " src="assets/transfer-desktop.jpg" alt="Desktop: how much and when, with the summary panel" loading="lazy">
+        <img class="bi " src="assets/transfer-mobile.jpg" alt="Mobile: the same step, stacked for a small screen" loading="lazy">
+      </div>
+    </section>
+
+    <section class="sec" id="handoff">
+      <p class="label">Handoff for dev</p>
+      <h2>Built for developers, not just for review.</h2>
+      <p>A central part of this project was a clean, developer-ready handoff: smart, reusable components with documented motion specs. Not just polished assets, but a foundation built to scale. For me, this was one of the key learnings of the project.</p>
+      <img class="bi " src="assets/transfer-handoff-specs.jpg" alt="Handoff boards: every component documented by state, from headers and autocomplete to bank lists, dropdowns and selection cards" loading="lazy">
+      <img class="bi " src="assets/transfer-handoff-props.jpg" alt="A smart text field component with properties for state, type, label, helper text and icons" loading="lazy">
+    </section>
+    <section class="next-card">
+      <p class="label">Next project</p>
+      <a class="card" href="ashdod.html">
+        <div class="card-media" style="--ratio:4 / 3"><div class="media vid"><video src="assets/ashdod-film.mp4" poster="assets/ashdod-film.jpg" autoplay muted loop playsinline aria-label="A Container’s Story: desktop and mobile screens of the Ashdod Port site"></video></div></div>
+        <div class="card-text"><h3>A container’s story</h3><p>Ashdod Port • Interactive website • 2025</p></div>
+      </a>
+    </section>
+
+
+  </article>
+</main>
+<script>
+document.querySelectorAll('.media.stage').forEach(st => {
+  const v = st.querySelector('video'), play = st.querySelector('.sc-play'), re = st.querySelector('.sc-restart');
+  if (!v || !play) return;
+  const sync = () => { st.classList.toggle('is-paused', v.paused); play.setAttribute('aria-label', v.paused ? 'Play' : 'Pause'); };
+  play.addEventListener('click', () => { v.paused ? v.play() : v.pause(); });
+  re.addEventListener('click', () => { v.currentTime = 0; v.play(); });
+  v.addEventListener('play', sync); v.addEventListener('pause', sync); sync();
+});
+</script>
+<div class="view-pill" aria-hidden="true"><svg viewBox="0 0 20 20"><use href="#flower"/></svg>view project</div>
+<script>
+(() => {
+  const pill = document.querySelector('.view-pill');
+  if (!pill || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  let x = 0, y = 0, tx = 0, ty = 0, raf = 0;
+  const loop = () => { x += (tx - x) * .22; y += (ty - y) * .22; pill.style.transform = `translate(${x}px, ${y}px)`; raf = (Math.abs(tx - x) + Math.abs(ty - y) > .3) ? requestAnimationFrame(loop) : 0; };
+  document.querySelectorAll('.card .card-media').forEach(m => {
+    m.addEventListener('pointerenter', e => { tx = x = e.clientX; ty = y = e.clientY; pill.style.transform = `translate(${x}px, ${y}px)`; pill.classList.add('on'); });
+    m.addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; if (!raf) raf = requestAnimationFrame(loop); });
+    m.addEventListener('pointerleave', () => pill.classList.remove('on'));
+  });
+  addEventListener('scroll', () => pill.classList.remove('on'), { passive: true });
+})();
+</script>
+<footer class="footer" id="contact">
+  <div class="wrap wide">
+    <p class="big">Let’s Talk <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#flower"/></svg></p>
+    <ul class="contacts">
+      <li><span>LinkedIn → </span><a href="https://www.linkedin.com/in/netta-alboher/" target="_blank" rel="noopener">Netta Alboher Meschiany</a></li>
+      <li><span>Email → </span><a href="mailto:Netta.albo@gmail.com">Netta.albo@gmail.com</a></li>
+      <li><span>Resume → </span><a href="assets/resume.pdf" target="_blank" rel="noopener">Download PDF</a></li>
+    </ul>
+  </div>
+</footer>
+<button type="button" class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script>(() => { const b = document.querySelector('.to-top'); const f = () => b.classList.toggle('on', scrollY > 500); addEventListener('scroll', f, { passive: true }); f(); b.onclick = () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); })();</script>
+<div class="lb" hidden><button type="button" class="lb-close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><img alt=""></div>
+<script>(() => {
+  const lb = document.querySelector('.lb'), big = lb.querySelector('img');
+  const ico = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>';
+  const open = img => { big.src = img.currentSrc || img.src; big.alt = img.alt; lb.hidden = false; requestAnimationFrame(() => lb.classList.add('on')); document.body.style.overflow = 'hidden'; lb.querySelector('.lb-close').focus({ focusVisible: false }); };
+  const close = () => { lb.classList.remove('on'); document.body.style.overflow = ''; setTimeout(() => lb.hidden = true, 250); };
+  lb.addEventListener('click', e => { if (e.target !== big) close(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !lb.hidden) close(); });
+  document.querySelectorAll('.cs img').forEach(img => {
+    if (img.closest('.card, .phone, .lb, .live, .stage, .slides, .window-shot, .carousel, .anno, .sund, .ways')) return;
+    let host = img.closest('.media');
+    if (!host) { host = document.createElement('span'); host.className = 'zoom-wrap'; img.replaceWith(host); host.appendChild(img); }
+    host.classList.add('zoomable');
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'zoom-btn'; b.setAttribute('aria-label', 'View full screen'); b.innerHTML = ico;
+    b.onclick = e => { e.stopPropagation(); open(img); };
+    host.appendChild(b); img.style.cursor = 'zoom-in'; img.addEventListener('click', () => open(img));
+  });
+})();</script>
+<div class="cv" hidden role="dialog" aria-label="Resume"><div class="cv-bar"><a class="cv-dl" href="assets/resume.pdf" download="Netta_Zoe_CV.pdf">Download PDF</a><button type="button" class="cv-x" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><img src="assets/resume.jpg" alt="Netta Zoe, resume" loading="lazy"></div>
+<script>(() => {
+  const cv = document.querySelector('.cv'); if (!cv) return;
+  const open = e => { e.preventDefault(); cv.hidden = false; requestAnimationFrame(() => cv.classList.add('on')); document.body.style.overflow = 'hidden'; cv.querySelector('.cv-x').focus({ focusVisible: false }); };
+  const close = () => { cv.classList.remove('on'); document.body.style.overflow = ''; setTimeout(() => cv.hidden = true, 250); };
+  document.querySelectorAll('a[href="assets/resume.pdf"]:not(.cv-dl)').forEach(a => a.addEventListener('click', open));
+  cv.addEventListener('click', e => { if (e.target === cv || e.target.closest('.cv-x')) close(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !cv.hidden) close(); });
+  const dl = cv.querySelector('.cv-dl');
+  if (window.claude && window.claude.use) {
+    const dlp = window.claude.use('downloads');
+    dl.addEventListener('click', async e => {
+      e.preventDefault();
+      const d = await dlp; if (!d) return;
+      try { const blob = await (await fetch(dl.getAttribute('href'))).blob(); await d.save({ filename: 'Netta_Zoe_CV.pdf', data: blob }); } catch (err) {}
+    });
+  }
+})();</script>
+</body>
+</html>

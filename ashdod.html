@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Container’s Story Case Study</title>
+<meta name="description" content="Bringing Ashdod Port’s interactive desktop experience to mobile.">
+<link rel="canonical" href="https://nettazoe.com/ashdod.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Netta Zoe">
+<meta property="og:title" content="A Container’s Story Case Study">
+<meta property="og:description" content="Bringing Ashdod Port’s interactive desktop experience to mobile.">
+<meta property="og:url" content="https://nettazoe.com/ashdod.html">
+<meta property="og:image" content="https://nettazoe.com/assets/ashdod-film.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#fafaf9">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>(() => {
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  const top = () => { if (location.hash) return; const h = document.documentElement, prev = h.style.scrollBehavior; h.style.scrollBehavior = 'auto'; window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); h.style.scrollBehavior = prev; };
+  top(); document.addEventListener('DOMContentLoaded', top); addEventListener('load', top); addEventListener('pageshow', top);
+})();</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flower" viewBox="0 0 20 20"><path d="M6.01581 19.3153C5.36836 19.3153 4.76588 19.1445 4.20837 18.8028C3.66883 18.479 3.22821 18.0384 2.88651 17.4809C2.56279 16.9234 2.40093 16.3119 2.40093 15.6465C2.40093 14.6753 2.76062 13.848 3.48 13.1646C4.21736 12.4812 5.13457 12.0856 6.23162 11.9777L5.96185 11.1144C5.60216 11.3122 5.18852 11.4831 4.72092 11.627C4.27131 11.7708 3.83968 11.8428 3.42604 11.8428C2.7786 11.8428 2.19411 11.6809 1.67256 11.3572C1.16899 11.0155 0.76434 10.5749 0.458604 10.0353C0.152868 9.47782 0 8.88433 0 8.25487C0 7.57146 0.16186 6.95999 0.485581 6.42046C0.827286 5.86294 1.26791 5.42232 1.80744 5.0986C2.34697 4.77488 2.94046 4.61302 3.5879 4.61302C4.32527 4.61302 5.03565 4.87379 5.71906 5.39534C6.40247 5.91689 6.89705 6.54635 7.20278 7.28371L7.90418 6.74418C7.41859 6.29457 7.02294 5.79999 6.7172 5.26046C6.42945 4.70294 6.28557 4.1724 6.28557 3.66883C6.28557 2.98542 6.44743 2.37395 6.77115 1.83442C7.09487 1.2769 7.5265 0.836278 8.06604 0.512557C8.62355 0.170852 9.23503 0 9.90045 0C10.5659 0 11.1773 0.170852 11.7349 0.512557C12.2924 0.836278 12.733 1.2769 13.0567 1.83442C13.3984 2.39194 13.5693 3.00341 13.5693 3.66883C13.5693 4.1724 13.4164 4.71193 13.1107 5.28744C12.8049 5.84495 12.4183 6.33053 11.9507 6.74418L12.6521 7.28371C12.9578 6.52836 13.4434 5.89891 14.1088 5.39534C14.7922 4.87379 15.5116 4.61302 16.267 4.61302C16.9144 4.61302 17.5079 4.77488 18.0474 5.0986C18.6049 5.42232 19.0456 5.86294 19.3693 6.42046C19.693 6.95999 19.8549 7.57146 19.8549 8.25487C19.8549 8.88433 19.693 9.47782 19.3693 10.0353C19.0635 10.5749 18.6499 11.0155 18.1283 11.3572C17.6248 11.6809 17.0673 11.8428 16.4558 11.8428C15.6465 11.8428 14.7922 11.6 13.893 11.1144L13.6232 11.9777C14.3426 12.0496 14.9901 12.2564 15.5656 12.5981C16.1411 12.9218 16.5997 13.3535 16.9414 13.893C17.2831 14.4146 17.4539 14.999 17.4539 15.6465C17.4539 16.2939 17.2831 16.8964 16.9414 17.4539C16.6177 18.0114 16.186 18.4611 15.6465 18.8028C15.107 19.1445 14.5045 19.3153 13.8391 19.3153C12.8139 19.3153 11.9597 18.9646 11.2763 18.2632C10.5929 17.5439 10.2511 16.6266 10.2511 15.5116C10.2511 15.098 10.2961 14.7113 10.386 14.3516H9.46882C9.50479 14.5315 9.53177 14.7203 9.54975 14.9181C9.58572 15.1159 9.60371 15.3138 9.60371 15.5116C9.60371 16.6087 9.262 17.5169 8.57859 18.2363C7.89518 18.9556 7.04092 19.3153 6.01581 19.3153ZM9.90045 13.6502C10.5119 13.6502 11.0694 13.4973 11.573 13.1916C12.0766 12.8859 12.4812 12.4812 12.787 11.9777C13.0927 11.4741 13.2456 10.9166 13.2456 10.3051C13.2456 9.69363 13.0927 9.13611 12.787 8.63255C12.4812 8.12898 12.0766 7.72433 11.573 7.41859C11.0694 7.11286 10.5119 6.95999 9.90045 6.95999C9.28898 6.95999 8.73146 7.11286 8.2279 7.41859C7.74232 7.72433 7.34666 8.12898 7.04092 8.63255C6.75317 9.13611 6.60929 9.69363 6.60929 10.3051C6.60929 10.9166 6.75317 11.4831 7.04092 12.0046C7.34666 12.5082 7.75131 12.9129 8.25487 13.2186C8.75844 13.5063 9.30696 13.6502 9.90045 13.6502Z"/></symbol>
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M4 12 12 4M5.5 4H12v6.5"/></symbol>
+</svg>
+<header class="nav">
+  <div class="wrap wide">
+    <a class="brand" href="index.html"><svg><use href="#flower"/></svg>Netta Zoe</a>
+    <nav class="nav-links"><a href="index.html#work">Work</a><a href="about.html">About</a><a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a></nav>
+  </div>
+</header>
+
+<main class="wrap cs-layout">
+  <article class="cs">
+
+    <header class="cs-head">
+      <a class="back" href="index.html#work">← All work</a>
+      <p class="label">Ashdod Port • Interactive website • 2025</p>
+      <h1 class="serif">A container’s story</h1>
+      <p class="lede">From desktop interaction to mobile, designed and handed off for production.</p>
+    </header>
+
+    <div class="cs-hero">
+      <div class="media vid"><video src="assets/ashdod-film.mp4" poster="assets/ashdod-film.jpg" autoplay muted loop playsinline aria-label="A Container’s Story: desktop and mobile screens of the Ashdod Port site"></video></div>
+      <dl class="facts">
+        <div><dt>Client</dt><dd>Ashdod Port<br>Innovation division</dd></div>
+        <div><dt>Sector</dt><dd>Logistics, Innovation</dd></div>
+        <div><dt>Duration</dt><dd>2 months, 2025</dd></div>
+        <div><dt>Team</dt><dd><span class="nowrap">Tal Sofia, Lead designer</span><br>Netta Zoe<br><span class="nowrap">Yoram Berkowich, PM</span></dd></div>
+      </dl>
+    </div>
+
+    <section class="sec" id="project">
+      <p class="label">The project</p>
+      <h2>An interactive tour of a working port.</h2>
+      <p>A Container’s Story is an interactive tool built for Ashdod Port’s innovation division. Users explore the port’s main operational zones, learn how each area works, and discover the startup solutions the port offers.</p>
+      <p><b>My role:</b> translate an existing desktop experience to mobile and hand it off for production.</p>
+      <img class="bi " src="assets/ashdod-aerial.jpg" alt="Aerial view of container stacks and cranes at Ashdod Port" loading="lazy">
+    </section>
+
+    <section class="sec" id="challenge">
+      <p class="label">The challenge</p>
+      <h2>A spatial desktop experience, on a small touch screen.</h2>
+      <p>The desktop version was built around spatial exploration and rich interactions. Moving it to mobile meant working within real constraints: a smaller screen, touch gestures and limited space, without flattening the experience or losing what made it work.</p>
+      <video class="bv " src="assets/ashdod-desktop.mp4" poster="assets/ashdod-desktop.jpg" autoplay muted loop playsinline aria-label="The desktop version: exploring the port by area"></video>
+      <p class="caption">Context: the desktop version.</p>
+    </section>
+
+    <section class="sec" id="problem">
+      <p class="label">Problem statement</p>
+      <h2>How might we bring a rich, spatial desktop experience to mobile without losing the interactions that made it work?</h2>
+    </section>
+
+    <section class="sec" id="solution">
+      <p class="label">The solution</p>
+      <h2>Rethinking navigation and gestures for touch.</h2>
+      <p>I rethought navigation and gestures to fit mobile naturally, keeping the sense of exploration without forcing desktop patterns onto a smaller screen. Alongside that, I structured the design system and delivered a clean, developer-ready handoff.</p>
+    </section>
+
+    <section class="sec" id="main">
+      <p class="label">Main page</p>
+      <h2>A wandering experience, guided by animation.</h2>
+      <p>On the home screen, users drag across an aerial view of the port to find each area. Tapping an area opens a drawer with its story and challenges; scrolling the drawer reveals a video of that zone.</p>
+      <div class="flow2">
+        <figure class="fg">
+          <p class="fg-t">Main page</p>
+          <div class="fg-p"><img class="bi " src="assets/ashdod-m-intro.jpg" alt="Intro screen: A Container’s Story, click to explore" loading="lazy"><img class="bi " src="assets/ashdod-m-home-drag.jpg" alt="Home: drag to move across the port" loading="lazy"></div>
+          <figcaption>A wandering experience accompanied by animations</figcaption>
+        </figure>
+        <svg class="fg-arrow" viewBox="0 0 64 24" aria-hidden="true"><path d="M2 12H56" stroke="currentColor" stroke-width="2" stroke-dasharray="4 5" fill="none"/><path d="M50 5l8 7-8 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <figure class="fg">
+          <p class="fg-t">Shipping page</p>
+          <div class="fg-p"><img class="bi " src="assets/ashdod-m-drawer.jpg" alt="Shipping page: the area drawer" loading="lazy"><img class="bi " src="assets/ashdod-m-drawer-video.jpg" alt="Drawer scrolled up to reveal the area video" loading="lazy"></div>
+          <figcaption>Drawer can be scrolled to see the video</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sec" id="startups">
+      <p class="label">Startups</p>
+      <h2>From a stacked deck to a swipeable carousel.</h2>
+      <p>On desktop the startups fan out as a deck of cards. On mobile they become a gallery: tapping a card flips it and switches to a scrolling view with an animated transition, and the card in the middle is always the red, active one.</p>
+      <div class="dm"><video class="bv " src="assets/ashdod-startups-desktop.mp4" poster="assets/ashdod-startups-desktop.jpg" autoplay muted loop playsinline aria-label="Startups on desktop: a fanned deck of cards"></video><video class="bv mob" src="assets/ashdod-startups-mobile.mp4" poster="assets/ashdod-startups-mobile.jpg" autoplay muted loop playsinline aria-label="Startups on mobile: gallery, flip and scroll"></video></div>
+      <h3 class="car-t">Screen breakdown</h3><div class="strip carousel ash"><figure><img src="assets/ashdod-m-empty.jpg" alt="Startups empty state" loading="lazy"><figcaption>Empty state</figcaption></figure><figure><img src="assets/ashdod-m-gallery.jpg" alt="Startups gallery view" loading="lazy"><figcaption>Gallery view</figcaption></figure><figure><img src="assets/ashdod-m-flip.jpg" alt="Card flipping animation" loading="lazy"><figcaption>Flipping card</figcaption></figure><figure><img src="assets/ashdod-m-navitrack.jpg" alt="Scrolling view, main card" loading="lazy"><figcaption>Main card</figcaption></figure><figure><img src="assets/ashdod-m-shipfuel.jpg" alt="Scrolling between startups" loading="lazy"><figcaption>Scrolling</figcaption></figure></div><div class="cz-dots" role="tablist" aria-label="Screens"></div>
+    </section>
+
+    <section class="sec" id="challenges">
+      <p class="label">Challenges</p>
+      <h2>Every area, its challenges, one tap away.</h2>
+      <p>On desktop the challenges sit on a blueprint map of the port. On mobile each area becomes an accordion: open one to see its wireframe illustration and the challenges the port is looking to solve.</p>
+      <div class="dm"><video class="bv " src="assets/ashdod-challenges-desktop.mp4" poster="assets/ashdod-challenges-desktop.jpg" autoplay muted loop playsinline aria-label="Challenges on desktop: the blueprint map"></video><video class="bv mob" src="assets/ashdod-challenges-mobile.mp4" poster="assets/ashdod-challenges-mobile.jpg" autoplay muted loop playsinline aria-label="Challenges on mobile: area accordions"></video></div>
+      <h3 class="car-t">Screen breakdown</h3><div class="strip carousel ash"><figure><img src="assets/ashdod-m-closed.jpg" alt="All areas closed" loading="lazy"><figcaption>All areas</figcaption></figure><figure><img src="assets/ashdod-m-shipping.jpg" alt="Shipping open" loading="lazy"><figcaption>Shipping</figcaption></figure><figure><img src="assets/ashdod-m-delivery.jpg" alt="Delivery open" loading="lazy"><figcaption>Delivery</figcaption></figure><figure><img src="assets/ashdod-m-storage.jpg" alt="Storage open" loading="lazy"><figcaption>Storage</figcaption></figure><figure><img src="assets/ashdod-m-unloading.jpg" alt="Unloading open" loading="lazy"><figcaption>Unloading</figcaption></figure></div><div class="cz-dots" role="tablist" aria-label="Screens"></div>
+    </section>
+
+    <section class="sec" id="handoff">
+      <p class="label">Handoff for dev</p>
+      <h2>Ready for production.</h2>
+      <p>Every screen, state and transition was organized for developers, with the design system structured so the mobile build could follow the same foundation.</p>
+      <video class="bv " src="assets/ashdod-handoff.mp4" poster="assets/ashdod-handoff.jpg" autoplay muted loop playsinline aria-label="Walkthrough of the organized Figma handoff"></video>
+    </section>
+    <section class="next-card">
+      <p class="label">Next project</p>
+      <a class="card" href="vouchers.html">
+        <div class="card-media" style="--ratio:4 / 3"><div class="media window-shot"><img class="ws-bg" src="assets/vouchers-bg.jpg" alt="" aria-hidden="true"><div class="ws-win"><img src="assets/vouchers-screen.jpg" alt="Payment vouchers dashboard: the projects overview"></div></div></div>
+        <div class="card-text"><h3>Digital payment vouchers for home buyers</h3><p>Leumi Bank • Dashboard • 2026</p></div>
+      </a>
+    </section>
+
+
+  </article>
+</main>
+<script>
+document.querySelectorAll('.media.stage').forEach(st => {
+  const v = st.querySelector('video'), play = st.querySelector('.sc-play'), re = st.querySelector('.sc-restart');
+  if (!v || !play) return;
+  const sync = () => { st.classList.toggle('is-paused', v.paused); play.setAttribute('aria-label', v.paused ? 'Play' : 'Pause'); };
+  play.addEventListener('click', () => { v.paused ? v.play() : v.pause(); });
+  re.addEventListener('click', () => { v.currentTime = 0; v.play(); });
+  v.addEventListener('play', sync); v.addEventListener('pause', sync); sync();
+});
+</script>
+<script>
+document.querySelectorAll('.carousel').forEach(c => {
+  const dotsEl = c.nextElementSibling, items = [...c.children];
+  const step = () => items[0].getBoundingClientRect().width + 24;
+  const perView = () => Math.max(1, Math.round(c.clientWidth / step()));
+  const pages = () => Math.max(1, items.length - perView() + 1);
+  const go = i => c.scrollTo({ left: i >= pages() - 1 ? c.scrollWidth : i * step(), behavior: 'smooth' });
+  const build = () => { dotsEl.innerHTML = ''; for (let i = 0; i < pages(); i++) { const d = document.createElement('button'); d.type = 'button'; d.setAttribute('aria-label', 'Slide ' + (i + 1)); d.onclick = () => go(i); dotsEl.appendChild(d); } sync(); };
+  const sync = () => { c.classList.toggle('at-end', c.scrollLeft + c.clientWidth >= c.scrollWidth - 4); const end = c.scrollLeft + c.clientWidth >= c.scrollWidth - 4; const i = end ? pages() - 1 : Math.min(pages() - 2, Math.round(c.scrollLeft / step())); [...dotsEl.children].forEach((d, k) => d.classList.toggle('on', k === i)); };
+  c.addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
+  addEventListener('resize', build); build();
+});
+</script>
+<div class="view-pill" aria-hidden="true"><svg viewBox="0 0 20 20"><use href="#flower"/></svg>view project</div>
+<script>
+(() => {
+  const pill = document.querySelector('.view-pill');
+  if (!pill || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  let x = 0, y = 0, tx = 0, ty = 0, raf = 0;
+  const loop = () => { x += (tx - x) * .22; y += (ty - y) * .22; pill.style.transform = `translate(${x}px, ${y}px)`; raf = (Math.abs(tx - x) + Math.abs(ty - y) > .3) ? requestAnimationFrame(loop) : 0; };
+  document.querySelectorAll('.card .card-media').forEach(m => {
+    m.addEventListener('pointerenter', e => { tx = x = e.clientX; ty = y = e.clientY; pill.style.transform = `translate(${x}px, ${y}px)`; pill.classList.add('on'); });
+    m.addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; if (!raf) raf = requestAnimationFrame(loop); });
+    m.addEventListener('pointerleave', () => pill.classList.remove('on'));
+  });
+  addEventListener('scroll', () => pill.classList.remove('on'), { passive: true });
+})();
+</script>
+<footer class="footer" id="contact">
+  <div class="wrap wide">
+    <p class="big">Let’s Talk <svg viewBox="0 0 40 40" aria-hidden="true"><use href="#flower"/></svg></p>
+    <ul class="contacts">
+      <li><span>LinkedIn → </span><a href="https://www.linkedin.com/in/netta-alboher/" target="_blank" rel="noopener">Netta Alboher Meschiany</a></li>
+      <li><span>Email → </span><a href="mailto:Netta.albo@gmail.com">Netta.albo@gmail.com</a></li>
+      <li><span>Resume → </span><a href="assets/resume.pdf" target="_blank" rel="noopener">Download PDF</a></li>
+    </ul>
+  </div>
+</footer>
+<button type="button" class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script>(() => { const b = document.querySelector('.to-top'); const f = () => b.classList.toggle('on', scrollY > 500); addEventListener('scroll', f, { passive: true }); f(); b.onclick = () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); })();</script>
+<div class="lb" hidden><button type="button" class="lb-close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><img alt=""></div>
+<script>(() => {
+  const lb = document.querySelector('.lb'), big = lb.querySelector('img');
+  const ico = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>';
+  const open = img => { big.src = img.currentSrc || img.src; big.alt = img.alt; lb.hidden = false; requestAnimationFrame(() => lb.classList.add('on')); document.body.style.overflow = 'hidden'; lb.querySelector('.lb-close').focus({ focusVisible: false }); };
+  const close = () => { lb.classList.remove('on'); document.body.style.overflow = ''; setTimeout(() => lb.hidden = true, 250); };
+  lb.addEventListener('click', e => { if (e.target !== big) close(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !lb.hidden) close(); });
+  document.querySelectorAll('.cs img').forEach(img => {
+    if (img.closest('.card, .phone, .lb, .live, .stage, .slides, .window-shot, .carousel, .anno, .sund, .ways')) return;
+    let host = img.closest('.media');
+    if (!host) { host = document.createElement('span'); host.className = 'zoom-wrap'; img.replaceWith(host); host.appendChild(img); }
+    host.classList.add('zoomable');
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'zoom-btn'; b.setAttribute('aria-label', 'View full screen'); b.innerHTML = ico;
+    b.onclick = e => { e.stopPropagation(); open(img); };
+    host.appendChild(b); img.style.cursor = 'zoom-in'; img.addEventListener('click', () => open(img));
+  });
+})();</script>
+<div class="cv" hidden role="dialog" aria-label="Resume"><div class="cv-bar"><a class="cv-dl" href="assets/resume.pdf" download="Netta_Zoe_CV.pdf">Download PDF</a><button type="button" class="cv-x" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><img src="assets/resume.jpg" alt="Netta Zoe, resume" loading="lazy"></div>
+<script>(() => {
+  const cv = document.querySelector('.cv'); if (!cv) return;
+  const open = e => { e.preventDefault(); cv.hidden = false; requestAnimationFrame(() => cv.classList.add('on')); document.body.style.overflow = 'hidden'; cv.querySelector('.cv-x').focus({ focusVisible: false }); };
+  const close = () => { cv.classList.remove('on'); document.body.style.overflow = ''; setTimeout(() => cv.hidden = true, 250); };
+  document.querySelectorAll('a[href="assets/resume.pdf"]:not(.cv-dl)').forEach(a => a.addEventListener('click', open));
+  cv.addEventListener('click', e => { if (e.target === cv || e.target.closest('.cv-x')) close(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !cv.hidden) close(); });
+  const dl = cv.querySelector('.cv-dl');
+  if (window.claude && window.claude.use) {
+    const dlp = window.claude.use('downloads');
+    dl.addEventListener('click', async e => {
+      e.preventDefault();
+      const d = await dlp; if (!d) return;
+      try { const blob = await (await fetch(dl.getAttribute('href'))).blob(); await d.save({ filename: 'Netta_Zoe_CV.pdf', data: blob }); } catch (err) {}
+    });
+  }
+})();</script>
+</body>
+</html>
