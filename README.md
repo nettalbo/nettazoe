@@ -13,7 +13,7 @@ Static site: plain HTML, CSS and a little inline JavaScript. No build step, no d
 - `assets/fonts/` Geist and Geist Mono (SIL Open Font License, free for web use)
 
 ## Domain
-All canonical and link-preview URLs point to `https://nettazoe.com`. If the domain changes, search and replace it in the HTML files, `robots.txt` and `sitemap.xml`.
+All canonical and link-preview URLs point to `https://www.nettazoe.com`. If the domain changes, search and replace it in the HTML files, `robots.txt` and `sitemap.xml`.
 
 ## Publish
 - Netlify: drag this folder onto app.netlify.com/drop, then Domain settings → add `nettazoe.com`
