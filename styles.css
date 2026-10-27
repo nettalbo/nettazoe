@@ -658,3 +658,5 @@ html { scroll-behavior: smooth; }
 .reflection li b { display: block; margin-bottom: 4px; color: var(--fg); font-weight: 500; font-size: 16px; }
 .reflection li { line-height: 1.6; padding-block: 20px; }
 .nf { min-height: 60vh; padding-block: 120px; display: flex; flex-direction: column; gap: 16px; }
+/* phones: no play/restart chrome, videos just play (sound toggle stays) */
+@media (hover: none) { .stage-ctrl .sc-play, .stage-ctrl .sc-restart { display: none; } .stage-ctrl { opacity: 1; } }

@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Payment Vouchers · Netta Zoe</title>
 <meta name="description" content="Designing a digital payment voucher management system for home buyers and contractors.">
-<link rel="canonical" href="https://nettazoe.com/vouchers">
+<link rel="canonical" href="https://nettazoe.com/vouchers.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Netta Zoe">
 <meta property="og:title" content="Payment Vouchers · Netta Zoe">
 <meta property="og:description" content="Designing a digital payment voucher management system for home buyers and contractors.">
-<meta property="og:url" content="https://nettazoe.com/vouchers">
+<meta property="og:url" content="https://nettazoe.com/vouchers.html">
 <meta property="og:image" content="https://nettazoe.com/assets/vouchers-screen.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -208,6 +208,16 @@
       try { const blob = await (await fetch(dl.getAttribute('href'))).blob(); await d.save({ filename: 'Netta_Zoe_CV.pdf', data: blob }); } catch (err) {}
     });
   }
+})();</script>
+<script>(() => {
+  const vids = [...document.querySelectorAll('video[autoplay]')];
+  vids.forEach(v => { v.muted = true; v.defaultMuted = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('webkit-playsinline', ''); v.setAttribute('preload', 'metadata'); });
+  const tryPlay = v => { if (v.dataset.userPaused) return; const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { e.isIntersecting ? tryPlay(e.target) : e.target.pause(); }), { rootMargin: '200px' }) : null;
+  vids.forEach(v => io ? io.observe(v) : tryPlay(v));
+  const kick = () => { vids.forEach(v => { const r = v.getBoundingClientRect(); if (r.bottom > -200 && r.top < innerHeight + 200) tryPlay(v); }); };
+  ['touchstart', 'pointerdown', 'scroll'].forEach(ev => addEventListener(ev, kick, { passive: true, once: ev !== 'scroll' }));
+  document.querySelectorAll('.sc-play').forEach(b => b.addEventListener('click', () => { const v = b.closest('.media').querySelector('video'); if (v.paused) v.dataset.userPaused = '1'; else delete v.dataset.userPaused; }));
 })();</script>
 </body>
 </html>
