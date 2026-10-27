@@ -293,7 +293,8 @@ document.querySelectorAll('.carousel').forEach(c => {
   const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { e.isIntersecting ? tryPlay(e.target) : e.target.pause(); }), { rootMargin: '200px' }) : null;
   vids.forEach(v => io ? io.observe(v) : tryPlay(v));
   const kick = () => { vids.forEach(v => { const r = v.getBoundingClientRect(); if (r.bottom > -200 && r.top < innerHeight + 200) tryPlay(v); }); };
-  ['touchstart', 'pointerdown', 'scroll'].forEach(ev => addEventListener(ev, kick, { passive: true, once: ev !== 'scroll' }));
+  ['touchend', 'click', 'scroll'].forEach(ev => addEventListener(ev, kick, { passive: true }));
+  addEventListener('pageshow', kick); document.addEventListener('visibilitychange', () => { if (!document.hidden) kick(); });
   document.querySelectorAll('.sc-play').forEach(b => b.addEventListener('click', () => { const v = b.closest('.media').querySelector('video'); if (v.paused) v.dataset.userPaused = '1'; else delete v.dataset.userPaused; }));
 })();</script>
 </body>
